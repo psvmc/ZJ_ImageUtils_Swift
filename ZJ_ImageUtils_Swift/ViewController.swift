@@ -23,11 +23,11 @@ class ViewController: UIViewController {
         
         imageView02.layer.cornerRadius = imageView02.frame.width/2;
         imageView02.layer.masksToBounds = true;
-        imageView02.image = ZJ_ImageUtils.imageFromText(UIColor.greenColor(), str: "小红", imageWidth: 64);
+        imageView02.image = ZJ_ImageUtils.imageFromText(UIColor.greenColor(), str: "小红帽", imageWidth: 64);
         
         imageView03.layer.cornerRadius = imageView03.frame.width/2;
         imageView03.layer.masksToBounds = true;
-        imageView03.image = ZJ_ImageUtils.imageFromText(UIColor.yellowColor(), str: "小花", imageWidth: 64);
+        imageView03.image = ZJ_ImageUtils.imageFromText(UIColor.lightGrayColor(), str: "花", imageWidth: 64);
     }
 
     override func didReceiveMemoryWarning() {
