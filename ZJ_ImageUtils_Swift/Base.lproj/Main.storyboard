@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZJ_ImageUtils_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R77-YN-d4f">
+                                <rect key="frame" x="128" y="158" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Ae8-0q-mrU"/>
+                                    <constraint firstAttribute="width" constant="64" id="CcA-UT-gOK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nCB-OC-hlb">
+                                <rect key="frame" x="128" y="252" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="gJI-Gf-qbd"/>
+                                    <constraint firstAttribute="width" constant="64" id="oIm-lo-fMN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ywq-c0-yNf">
+                                <rect key="frame" x="128" y="346" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="MNC-VH-HBa"/>
+                                    <constraint firstAttribute="height" constant="64" id="jOg-yG-J1G"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ywq-c0-yNf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PIJ-de-mLR"/>
+                            <constraint firstItem="nCB-OC-hlb" firstAttribute="top" secondItem="R77-YN-d4f" secondAttribute="bottom" constant="30" id="QlO-Q8-j4l"/>
+                            <constraint firstItem="nCB-OC-hlb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RVY-vP-u4H"/>
+                            <constraint firstItem="R77-YN-d4f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X9i-2w-OvO"/>
+                            <constraint firstItem="nCB-OC-hlb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fG7-Ow-tH7"/>
+                            <constraint firstItem="Ywq-c0-yNf" firstAttribute="top" secondItem="nCB-OC-hlb" secondAttribute="bottom" constant="30" id="qR6-7S-VFX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView01" destination="R77-YN-d4f" id="5FE-oe-r0N"/>
+                        <outlet property="imageView02" destination="nCB-OC-hlb" id="V4v-Hw-fpT"/>
+                        <outlet property="imageView03" destination="Ywq-c0-yNf" id="8rv-YQ-nZo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153.59999999999999" y="274.06"/>
+        </scene>
+    </scenes>
+</document>
